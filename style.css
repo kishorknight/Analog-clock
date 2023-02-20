@@ -1,0 +1,53 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#clock{
+    position: relative;
+    height: 40vw;
+    width: 40vw;
+    box-shadow: 0 0 10px #000000a8;
+    border-radius: 50%;
+    background: url("ta01.webp")no-repeat center center/cover;
+}
+#clock:hover{
+    cursor: not-allowed;
+    box-shadow: 0 0 10px black;
+}
+#hours,#min,#sec{
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+}
+#hours{
+    width: 2%;
+    height: 24%;
+    top: 26.2%;
+    left: 49.3%;
+    opacity: 0.8;
+    transform-origin: bottom;
+}
+#min{
+    width: 1.55%;
+    height: 31%;
+    top: 19.2%;
+    left: 49.5%;
+    opacity: 0.85;
+    transform-origin: bottom;
+
+}
+#sec{
+    width: 1%;
+    height: 34%;
+    top: 16.2%;
+    left: 49.89%;
+    opacity: 0.9;
+    transform-origin: bottom;
+    background-color: red;
+}
